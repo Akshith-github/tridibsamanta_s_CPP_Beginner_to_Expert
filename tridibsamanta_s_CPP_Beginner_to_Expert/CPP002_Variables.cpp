@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     //Declaring an integer type variable A, allocates 4 bytes of memory.
     int A=4;
@@ -22,5 +22,6 @@ main()
     //Re-initialization of A.
     A=10;
     cout<<A <<endl;
-    cout<<&A;
+    cout<<&A<<endl;
+    return 0;
 }

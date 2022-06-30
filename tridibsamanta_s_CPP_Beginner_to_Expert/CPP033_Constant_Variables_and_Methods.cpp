@@ -24,7 +24,7 @@ class Demo
 int main()
 {
     const Demo d1;
-    //d1.showMessage(); Error occurred if uncomment.
+    // d1.showMessage(); /*Error occurred if uncomment.*/
     d1.display();
     return(0);
 }

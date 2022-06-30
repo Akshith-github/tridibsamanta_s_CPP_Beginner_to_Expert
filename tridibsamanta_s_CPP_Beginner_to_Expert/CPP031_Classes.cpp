@@ -30,13 +30,13 @@ class MyDetails {
             delete [] p;
         }
 
-        void setAge(int value) {
+        void setAge(int value) { //Setter
                 if(value<0)
                     age=0;
                 else
                     age=value;
         }
-        short getAge() {
+        short getAge() { //Getter
             return age;
         }
 };

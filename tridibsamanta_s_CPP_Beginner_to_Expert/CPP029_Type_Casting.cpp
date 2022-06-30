@@ -17,7 +17,7 @@ int main() {
     cout<<a/b<<endl;
     cout<<(double)a/b<<endl; //Explicit Casting
 
-    int x = 444;
+    int x = 675444;
     short y=x; //Implicit Casting
     cout<<y<<endl;
 

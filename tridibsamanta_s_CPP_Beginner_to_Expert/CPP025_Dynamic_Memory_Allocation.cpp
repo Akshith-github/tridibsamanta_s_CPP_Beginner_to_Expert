@@ -4,6 +4,7 @@
  **/
 
 #include<iostream>
+#include <new>
 using namespace std;
 
 int main() {
@@ -12,7 +13,8 @@ int main() {
     cout<<"How many numbers would you like to store in the array ? "<<endl;
     cin>>amount;
 
-    int *p = new (nothrow) int(amount);
+    /* int *p = new (nothrow) int(amount); */ /* error: ‘nothrow’ does not name a type */
+    int *p = new (nothrow) int[amount];
 
     if(p != NULL) {
         for(int i=0;i<amount;i++) {

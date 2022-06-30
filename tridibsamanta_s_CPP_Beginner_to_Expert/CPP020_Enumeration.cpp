@@ -12,9 +12,9 @@ string getDay(dayOfWeek);
 
 int main() {
 
-    //dayOfWeek d = Wednesday;
-    //cout<<d<<endl;
-    //cout<<getDay(Tuesday)<<endl;
+    dayOfWeek d = Wednesday;
+    cout<<d<<endl;
+    cout<<getDay(Tuesday)<<endl;
 
     cout<<"Enter a day of the week ?"<<endl;
     int i;

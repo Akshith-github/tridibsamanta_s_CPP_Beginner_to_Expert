@@ -10,7 +10,8 @@ class Box
     private:
         int length;
     public:
-        Box(): length(0) { }
+        // Box(): length(0) { }
+        Box(){length=0;}
         friend int printLength(Box);
 };
 int printLength(Box b)

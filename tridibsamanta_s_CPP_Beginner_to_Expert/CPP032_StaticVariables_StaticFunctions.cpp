@@ -33,7 +33,7 @@ int main()
     StaticFunction::display();
 
     StaticFunction ob;
-    cout <<"Value is : "<<ob.my_var<<endl;
+    cout <<"Value is : "<<ob.my_var<<"  "<<StaticFunction::my_var<<endl;
 
     return 0;
 }

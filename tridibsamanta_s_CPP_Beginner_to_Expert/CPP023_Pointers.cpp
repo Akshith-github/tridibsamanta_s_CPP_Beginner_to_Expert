@@ -9,14 +9,14 @@ using namespace std;
 int main() {
 
     int var = 5;
-    cout<<&var<<endl; //Prints the address
-    cout<<*&var<<endl; //Prints the value
+    cout<<"&var ="<<&var<<endl; //Prints the address
+    cout<<"*&var ="<<*&var<<endl; //Prints the value
 
     int *p; //*p - This indicates that p is a pointer type variable that points to address of another variable
     p=&var;
 
-    cout<<p<<endl; //Prints the address of var
-    cout<<*p<<endl; //Prints the value stored at the indicated address in the memory
+    cout<<"p ="<<p<<endl; //Prints the address of var
+    cout<<"*p ="<<*p<<endl; //Prints the value stored at the indicated address in the memory
 
     int a=20;
     cout<<"a : "<<a<<endl;
@@ -26,7 +26,22 @@ int main() {
     cout<<"*p1 : "<<*p1<<endl;
 
     int * const p_const = &a; //Cannot change the ADDRESS afterwards
+    cout<<"p_const : "<<p_const<<endl;
+    cout<<"*p_const : "<<*p_const<<endl;
+    *p_const = 70;
+    cout<<"*p_const : "<<*p_const<<endl;
+    cout<<"a : "<<a<<endl;
+    cout<<"----------------------------------------------------"<<endl;
     const int *p2 = &a; //Cannot change the VALUE
+    cout<<"p2 : "<<p2<<endl;
+    cout<<"*p2 : "<<*p2<<endl;
+    //*p2 = 80; //Error
+    int b=10;
+    p2 = &b; // address of b is stored in p2 and p2 is a pointer variable that points to address of b
+    a = 90;
+    cout<<"====>*p2 : "<<*p2<<endl;
+    cout<<"a : "<<a<<endl;
+    cout<<"----------------------------------------------------"<<endl;
     const int * const p3 = &a; //Cannot change the VALUE as well as ADDRESS
 
     int my_var=10;
