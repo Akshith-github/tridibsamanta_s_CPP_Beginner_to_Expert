@@ -1,7 +1,7 @@
 ﻿#include <cstdio>
 
 int main() {
-  unsigned short a = 0b10101010;
+  unsigned short a = 0b10101010; // binary literal
   printf("%hu\n", a);
   int b = 0123;
   printf("%d\n", b);

@@ -3,7 +3,7 @@
 int main() {
   unsigned long maximum = 0;
   unsigned long values[] = { 10, 50, 20, 40, 0 };
-  for(unsigned long value : values) {
+  for(unsigned long value : values) { //for each value in values
     if(value > maximum)
       maximum = value;
   }

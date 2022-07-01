@@ -1,6 +1,6 @@
 #include <cstddef>
 #include <cstdio>
-
+//%zd is a format specifier for size_t
 int main() {
   size_t size_c = sizeof(char);
   printf("char: %zd\n", size_c);
